@@ -29,7 +29,7 @@ function submitForm() {
         location: dLocation,
         text: dText
     });
-    //window.alert("OKAY");
+window.location.href = "form.html";
 }
 
 
