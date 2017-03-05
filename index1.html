@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+
+    
+    <table style="width:100% height: auto">     <!-- Table 1 is for logo and heading -->
+        <tr>
+            <td id="7"><img id="3" src="dunman high logo.png" /></td>
+            <td><img id="2" src="wifree logo.png" /></td>
+            <th><h1>Wifree</h1></th>
+        </tr>
+    </table>
+
+    <hr />  <!-- Added a horizontal line -->
+
+    <table style="width:100% height: auto">
+        <tr>    <!--button html-->
+            <td colspan = 50></td>
+            <td><input class="timebtn" type="button" value="Auditorium" onclick="pic1()" /></td>
+            <td><input class="timebtn" type="button" value="LT1" onclick="pic2()" /></td>
+            <td><input class="timebtn" type="button" value="LT2" onclick="pic3()" /></td>
+        </tr>
+        <tr>
+            <td><p1> If there is a problem <br> with the wifi, click below <br>to report it. Thank you!</p1></td>
+            <td>    <!--img html-->
+                <div id="ttimg">
+                <img src="/Foyer Building.JPG" id="ttaudi" />
+                <img src="/Hall or Canteen.JPG" id="ttlt1" />
+                <img src="/Library.JPG" id="ttlt2" />
+</div></td>
+        </tr>
+        <tr>
+            <td><form method="get" action="/form.html">
+                <button type="submit">Report</button>
+                </form></td>
+        </tr>
+    </table>
+
+        
+
+    
+
+    <!--button javascript-->
+    <script>
+    function pic1()
+    {
+        var img = document.getElementById('ttaudi');
+        img.style.visibility = 'visible';
+
+        var img = document.getElementById('ttlt1');
+        img.style.visibility = 'hidden';
+
+        var img = document.getElementById('ttlt2');
+        img.style.visibility = 'hidden'
+    }
+
+	function pic2()
+	{
+		var img = document.getElementById('ttaudi');
+		img.style.visibility = 'hidden';
+
+		var img = document.getElementById('ttlt1');
+		img.style.visibility = 'visible';
+
+		var img = document.getElementById('ttlt2');
+		img.style.visibility = 'hidden'
+	}
+
+	function pic3()
+	{
+		var img = document.getElementById('ttaudi');
+		img.style.visibility = 'hidden';
+
+		var img = document.getElementById('ttlt1');
+		img.style.visibility = 'hidden';
+
+		var img = document.getElementById('ttlt2');
+		img.style.visibility = 'visible'
+	}
+    </script>
+
+    <!--<img id="2" src="wifree logo.png" />
+    <h1> Wifree </h1>
+    <p1> If there is a problem <br> with the wifi, click here <br>to report it. Thank you!</p1>
+    <img src="Asset 10.png" />
+    <img id="4" src="insert easter egg pic here" />-->
+
+
+
+    <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

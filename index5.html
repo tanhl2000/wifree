@@ -1,0 +1,222 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+
+
+    <table style="width:80px">
+        <!-- Table 1 is for logo and heading -->
+        <tr>
+            <td id="7"><img id="3" src="dunman high logo.png" /></td>
+            <td><img id="2" src="wifree logo.png" /></td>
+            <th><h1>Wifree</h1></th>
+        </tr>
+    </table>
+
+    <hr />  <!-- Added a horizontal line -->
+
+    <table style="width:600px">
+        <tr>
+            <td><p1> If there is a problem with the wifi, click button to report it. Thank you!</p1></td>
+            <td>
+                <form method="get" action="/form.html">
+                    <button type="submit">Report</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <table style="width:1000px" id="Tab1">
+        <tr>
+            <!--button html-->
+            <td style="text-align:center;"><input class="timebtn" type="button" value="Foyer Building" onclick="mod1()" /></td>
+            <td style="text-align:center;"><input class="timebtn" type="button" value="Hall or Canteen" onclick="mod2()" /></td>
+            <td style="text-align:center;"><input class="timebtn" type="button" value="Library" onclick="mod3()" /></td>
+            <td style="text-align:center;"><input class="timebtn" type="button" value="LSP or Senior High Comp Labs" onclick="mod4()" /></td>
+            <td style="text-align:center;"><input class="timebtn" type="button" value="Music Atrium" onclick="mod5()" /></td>
+            <td style="text-align:center;"><input class="timebtn" type="button" value="Senior High Classrooms" onclick="mod6()" /></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;"><img id="Img1" src="/Foyer Building.JPG" alt="Foyer Building" width="100" height="60"></td>
+            <td style="text-align:center;"><img id="Img2" src="/Hall or Canteen.JPG" alt="Hall or Canteen" width="100" height="60"></td>
+            <td style="text-align:center;"><img id="Img3" src="/Library.JPG" alt="Library" width="100" height="60"></td>
+            <td style="text-align:center;"><img id="Img4" src="/LSP or Senior High Comp Labs.JPG" alt="LSP or Senior High Comp Labs" width="100" height="60"></td>
+            <td style="text-align:center;"><img id="Img5" src="/Music Atrium.JPG" alt="Music Atrium" width="100" height="60"></td>
+            <td style="text-align:center;"><img id="Img6" src="/Senior High Classrooms.JPG" alt="Senior High Classrooms" width="100" height="60"></td>
+        </tr>
+    </table>
+
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="modal01" style="margin:0 auto;">
+                    <h2 id="caption" style="text-align:center;"></h2>
+                </div>
+
+                <script>
+                    function mod1() {
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('Img1');
+                        var modalImg = document.getElementById("modal01");
+                        var captionText = document.getElementById("caption");
+                        modal.style.display = "block";
+                        modal.style.margin = "0 auto";
+                        modalImg.src = Img1.src;
+                        captionText.innerHTML = Img1.alt;
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    }
+
+                    function mod2() {
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('Img2');
+                        var modalImg = document.getElementById("modal01");
+                        var captionText = document.getElementById("caption");
+
+                        modal.style.display = "block";
+                        modal.style.margin = "0 auto";
+                        modal.style.position = "center";
+                        modalImg.src = Img2.src;
+                        captionText.innerHTML = Img2.alt;
+
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    }
+
+                    function mod3() {
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('Img3');
+                        var modalImg = document.getElementById("modal01");
+                        var captionText = document.getElementById("caption");
+                        modal.style.display = "block";
+                        modalImg.src = Img3.src;
+                        captionText.innerHTML = Img3.alt;
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    }
+
+                    function mod4() {
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('Img4');
+                        var modalImg = document.getElementById("modal01");
+                        var captionText = document.getElementById("caption");
+                        modal.style.display = "block";
+                        modalImg.src = Img4.src;
+                        captionText.innerHTML = Img4.alt;
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    }
+
+                    function mod5() {
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('Img5');
+                        var modalImg = document.getElementById("modal01");
+                        var captionText = document.getElementById("caption");
+                        modal.style.display = "block";
+                        modalImg.src = Img5.src;
+                        captionText.innerHTML = Img5.alt;
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    }
+
+                    function mod6() {
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('Img6');
+                        var modalImg = document.getElementById("modal01");
+                        var captionText = document.getElementById("caption");
+                        modal.style.display = "block";
+                        modalImg.src = Img6.src;
+                        captionText.innerHTML = Img6.alt;
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+                <!--<img id="2" src="wifree logo.png" />
+                <h1> Wifree </h1>
+                <p1> If there is a problem <br> with the wifi, click here <br>to report it. Thank you!</p1>
+                <img src="Asset 10.png" />
+                <img id="4" src="insert easter egg pic here" />-->
+
+
+
+                <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+                <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+                <script src="js/plugins.js"></script>
+                <script src="js/main.js"></script>
+
+                <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+                <script>
+                    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+                    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+                </script>
+                <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

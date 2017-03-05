@@ -1,4 +1,4 @@
-var formName = document.getElementById("FName");
+﻿var formName = document.getElementById("FName");
 var formMail = document.getElementById("FMail");
 var formTime = document.getElementById("FTime");
 var formDate = document.getElementById("FDate");
@@ -29,7 +29,7 @@ function submitForm() {
         location: dLocation,
         text: dText
     });
-window.location.href = "form.html";
+    window.location.href = "form.html";
 }
 
 
