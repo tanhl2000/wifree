@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+   
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAxrHvz0DUbw3AbrZwKbe20a-WX_xxm3A4",
+    authDomain: "wifree-334b8.firebaseapp.com",
+    databaseURL: "https://wifree-334b8.firebaseio.com",
+    storageBucket: "wifree-334b8.appspot.com",
+    messagingSenderId: "76226862150"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+    </script>
+
+    <form method="get" action="/index.html" style="background-color: red !important;">
+        <button type="submit">Back to Home</button>
+        <br />
+        <h1> WiFi Problem Report </h1>
+        <br />
+    </form>
+
+    <form style="background-color: #90caf9 !important;" action="backscript">
+        <fieldset>
+            <legend> Student Details </legend>
+            Name: <input id="FName" type="text" size="35"><br>
+            E-mail: <input id="FMail" type="text" size="30"><br>
+            Time of Problem: <input id="FTime" type="text" size="15"><br>
+            Date of Problem: <input id="FDate" type="text" size="9">
+        </fieldset>
+        <br>
+        <input id="FClass" type="radio" name="Class" value="SH">Senior High<br>
+        <input id="FClass" type="radio" name="Class" value="JH">Junior High
+        <br><br>
+        Is this a one-time problem? <br>
+        <input id="FProblem" type="checkbox" name="Problem" value="1">Yes
+        <input id="FProblem" type="checkbox" name="Problem" value="0">No
+        <br><br>
+        Where do you encounter WiFi problem?
+        <br>
+        <select id="FLocation" name="Location">
+            <option value="1"> Foyer Building </option>
+            <option value="2"> Hall or Canteen </option>
+            <option value="3"> Library </option>
+            <option value="4"> LSP or Senior High Comp Labs </option>
+            <option value="5"> Music Atrium</option>
+            <option value="6"> Senior High Classrooms</option>
+        </select>
+        <br><br>
+    </form>
+    <hr>
+    
+    <form style="background-color: #90caf9 !important;" action="backscript">
+        <h2>Problem Details</h2>
+        <textarea id="FText" cols="80" rows="5" name="Comments:::">
+        
+        </textarea>
+        <br>
+        <button type="submit" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script src="Picture.js"></script>
+
+</body>
+</html>
