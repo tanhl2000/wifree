@@ -29,7 +29,6 @@ function submitForm() {
         location: dLocation,
         text: dText
     });
-window.location.href = "form.html";
 }
 
 
